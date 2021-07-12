@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">Students grades</string>
-    <string name="nota1_text_hint">Nota 1</string>
+    <string name="app_name">Students grades Calculator</string>
+    <string name="test1_text_hint">Test 1 Score</string>
+    <string name="test2_text_hint">Test 2 Score</string>
+    <string name="absences_text_hint">Absences</string>
 </resources>
