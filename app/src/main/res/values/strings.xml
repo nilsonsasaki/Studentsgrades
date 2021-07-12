@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Students grades</string>
+    <string name="nota1_text_hint">Nota 1</string>
 </resources>
