@@ -8,6 +8,7 @@
 
 
     <EditText
+        android:autofillHints=""
         android:id="@+id/editTextNota1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:autofillHints=""
         android:id="@+id/editTextNota2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNota1" />
 
     <EditText
+        android:autofillHints=""
         android:id="@+id/editTextFaltas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
