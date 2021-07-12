@@ -3,4 +3,5 @@
     <string name="test1_text_hint">Test 1 Score</string>
     <string name="test2_text_hint">Test 2 Score</string>
     <string name="absences_text_hint">Absences</string>
+    <string name="calculate">Calculate</string>
 </resources>
