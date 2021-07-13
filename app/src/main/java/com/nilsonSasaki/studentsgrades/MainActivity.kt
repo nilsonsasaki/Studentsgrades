@@ -1,5 +1,6 @@
 package com.nilsonSasaki.studentsgrades
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,8 +24,10 @@ class MainActivity : AppCompatActivity() {
 
             if(average>=6 && abstention<=10){
                 tvResult.setText("Student is approved" + "\n"+ "Final Grade: " + average + "\n" + "Absences: " + abstention)
+                tvResult.setTextColor(Color.GREEN)
             } else {
                 tvResult.setText("Student is reproved" + "\n"+ "Final Grade: " + average + "\n" + "Absences: " + abstention)
+                tvResult.setTextColor(Color.RED)
             }
 
         }
