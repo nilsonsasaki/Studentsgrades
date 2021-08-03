@@ -6,77 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <EditText
-        android:id="@+id/Exam1"
-        android:autofillHints=""
-        android:layout_width="wrap_content"
+        android:id="@+id/etExam1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:hint="@string/exam1_text_hint"
         android:background="@color/light_gray"
-        android:ems="10"
-        android:hint="@string/test1_text_hint"
-        android:inputType="textPersonName"
-        android:padding="20dp"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
 
     <EditText
         android:id="@+id/Exam2"
-        android:autofillHints=""
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:hint="@string/Exam2_text_hint"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textSize="16sp"
         android:background="@color/light_gray"
-        android:ems="10"
-        android:hint="@string/test2_text_hint"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Exam1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etExam1"
+        />
 
     <EditText
         android:id="@+id/Absences"
-        android:autofillHints=""
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:background="@color/light_gray"
-        android:ems="10"
+        android:gravity="center"
         android:hint="@string/absences_text_hint"
-        android:inputType="textPersonName"
-        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Exam2" />
+        app:layout_constraintTop_toBottomOf="@id/Exam2" />
 
     <Button
-        android:id="@+id/Calculate"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="0dp"
+        android:id="@+id/btCalculate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="@color/light_gray"
         android:text="@string/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/Absences"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Absences" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0.6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
 
     <TextView
-        android:id="@+id/DisplayResult"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Calculate" />
+        app:layout_constraintTop_toBottomOf="@id/guideline0.6"
+        tools:text="Test"/>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
