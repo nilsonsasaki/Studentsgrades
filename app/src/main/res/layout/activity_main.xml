@@ -30,7 +30,7 @@
         android:id="@+id/Exam2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/Exam2_text_hint"
+        android:hint="@string/exam2_text_hint"
         android:inputType="numberDecimal"
         android:padding="16dp"
         android:textSize="16sp"
