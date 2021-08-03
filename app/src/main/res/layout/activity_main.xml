@@ -27,7 +27,7 @@
         />
 
     <EditText
-        android:id="@+id/Exam2"
+        android:id="@+id/etExam2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/exam2_text_hint"
@@ -46,7 +46,7 @@
         />
 
     <EditText
-        android:id="@+id/Absences"
+        android:id="@+id/etAbsences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -62,7 +62,7 @@
         android:layout_marginHorizontal="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Exam2" />
+        app:layout_constraintTop_toBottomOf="@id/etExam2" />
 
     <Button
         android:id="@+id/btCalculate"
@@ -71,7 +71,7 @@
         android:layout_marginTop="36dp"
         android:background="@color/light_gray"
         android:text="@string/calculate"
-        app:layout_constraintTop_toBottomOf="@id/Absences"
+        app:layout_constraintTop_toBottomOf="@id/etAbsences"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -83,6 +83,7 @@
         app:layout_constraintGuide_percent="0.6"/>
 
     <TextView
+        android:id="@+id/tvResults"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
