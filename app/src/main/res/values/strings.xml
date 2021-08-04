@@ -4,4 +4,5 @@
     <string name="exam2_text_hint">Test 2 Score</string>
     <string name="absences_text_hint">Absences</string>
     <string name="calculate">Calculate</string>
+    <string name="result_text">Student is %1$s\nFinal Grade: %2$s\nAbsences: %3$d</string>
 </resources>
