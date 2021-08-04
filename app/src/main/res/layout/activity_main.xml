@@ -4,62 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2D2F31"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/etExam1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:background="#3C3F41"
+        android:gravity="center_horizontal"
         android:hint="@string/exam1_text_hint"
-        android:background="@color/light_gray"
         android:inputType="numberDecimal"
         android:padding="16dp"
-        android:textSize="16sp"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:layout_marginHorizontal="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        />
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/etExam2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="36dp"
+        android:background="#3C3F41"
+        android:gravity="center_horizontal"
         android:hint="@string/exam2_text_hint"
         android:inputType="numberDecimal"
         android:padding="16dp"
-        android:textSize="16sp"
-        android:background="@color/light_gray"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="36dp"
-        android:textColor="@color/black"
-        android:layout_marginHorizontal="48dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etExam1"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etExam1" />
 
     <EditText
         android:id="@+id/etAbsences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
         android:layout_marginTop="36dp"
-        android:background="@color/light_gray"
+        android:background="#3C3F41"
         android:gravity="center"
         android:hint="@string/absences_text_hint"
-        android:textColorHint="@color/black"
         android:inputType="number"
         android:padding="16dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
         android:textSize="16sp"
-        android:layout_marginHorizontal="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etExam2" />
@@ -71,16 +72,17 @@
         android:layout_marginTop="36dp"
         android:background="@color/light_gray"
         android:text="@string/calculate"
-        app:layout_constraintTop_toBottomOf="@id/etAbsences"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/etAbsences" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline0.6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"/>
+        app:layout_constraintGuide_percent="0.6" />
 
     <TextView
         android:id="@+id/tvResults"
@@ -93,10 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline0.6"
-        tools:text="Test"/>
-
-
-
+        tools:text="Test" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
